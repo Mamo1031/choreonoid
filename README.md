@@ -36,6 +36,25 @@ Choreonoid has been used in various situations. Application examples are shown i
 
 To install Choreonoid, please see [the installation page](https://choreonoid.org/en/manuals/latest/install/install.html) on the official document
 
+## Additional notes for this fork
+
+This repository includes the `vnoid` library as a **Git submodule** under `ext/vnoid`.
+When cloning this repository, please use the `--recurse-submodules` option:
+
+```bash
+git clone --recurse-submodules https://github.com/Mamo1031/choreonoid.git
+```
+
+If you have already cloned without it, initialize and update the submodule with:
+
+```bash
+git submodule update --init --recursive
+```
+
+The `vnoid` submodule contains custom robot, controller, and project files used for simulation.
+If you modify files in `ext/vnoid`, commit and push changes **inside the submodule** first,  
+then update and commit the submodule reference in this parent repository.
+
 ## ROS Support
 
 ROS (currently, only ROS1) is supported. Please see [our official document](https://choreonoid.org/en/manuals/latest/ros/index.html) to set up Choreonoid with ROS.
