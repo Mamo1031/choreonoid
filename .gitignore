@@ -4,6 +4,7 @@
 /core
 ext/*
 !ext/CMakeLists.txt
+!ext/vnoid
 Makefile
 CMakeFiles/
 cmake_install.cmake

@@ -1,0 +1,3 @@
+[submodule "ext/vnoid"]
+	path = ext/vnoid
+	url = https://github.com/Mamo1031/vnoid.git
